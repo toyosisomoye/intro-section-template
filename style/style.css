@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+html {
+  background-color: rgb(239, 239, 239);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Epilogue";
+  font-weight: 500, 700;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.idk {
+  display: flex;
+  gap: 30px;
+  /* justify-content: space-between; */
+}
+.features {
+  list-style-type: none;
+  display: none;
+  gap: 15px;
+}
+
+.features li {
+  cursor: pointer;
+}
+.text {
+  font-size: 4rem;
+}
+.everything {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 450px) {
+  .everything {
+    flex-direction: column;
+  }
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.button {
+  border-radius: 15px;
+  padding: 10px 40px;
+  color: white;
+  background-color: black;
+}
+.button:hover {
+  color: black;
+  background: none;
+}
+.idk {
+  color: grey;
+}
+.login-btn {
+  color: grey;
+  border: none;
+  background: none;
+  margin-right: 20px;
+  display: none;
+}
+.login-btn:hover {
+  color: black;
+}
+.other-image {
+  display: none;
+  height: auto;
+}
+.register-btn {
+  color: grey;
+  background: none;
+  padding: 10px;
+  border-color: grey;
+  border-radius: 15px;
+  border: 1px solid;
+  display: none;
+}
+.register-btn:hover {
+  color: black;
+  border-color: black;
+}
+.timetaking{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    margin-top: 4em;
+    padding:10px 60px ;
+}
+.timetaking img{
+    height:auto;
+    width:10em;
+}
+@media (min-width: 930px) {
+  .icon {
+    display: none;
+  }
+  .features {
+    display: flex;
+  }
+  .login-btn {
+    display: flex;
+  }
+  .register-btn {
+    display: flex;
+  }
+}
+@media (max-width: 930px) {
+  .text {
+    margin-top: 10px;
+    font-size: 45px;
+  }
+  .image {
+    display: none;
+  }
+  .icon {
+    padding: 15px;
+  }
+  .other-image {
+    display: flex;
+    width: 100%;
+    align-self: center;
+  }
+  .heading {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+@media (min-width:452px) and (max-width:930px) {
+    .other-image {
+        width: 100%;
+    }
+    .everything{
+        display: grid;
+        grid-template: 1fr;
+        padding: 10px;
+        align-content: center;
+    }
+    .heading{
+        text-align: center;
+    }
+}
